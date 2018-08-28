@@ -52,8 +52,9 @@ function save(key, data) {
   }
 }
 
-function fetch(key){
-  return localStorage.getItem(key);
+function fetch(key) {
+  const notes = localStorage.getItem(key)
+  return notes ? notes : null;
 }
 
 /**
@@ -111,7 +112,7 @@ function renderNote(note) {
  * 主页面渲染
  */
 function renderPage() {
-  note.notes = JSON.parse(fetch('notes'));
+  note.notes = JSON.parse(fetch('notes')) || note.notes;
   const noData = `<p class="center">no data</p>`
   $app.innerHTML = `
     <h2 class="center">Notes</h2>
