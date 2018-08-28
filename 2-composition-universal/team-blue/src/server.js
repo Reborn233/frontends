@@ -8,7 +8,7 @@ app.use(morgan('dev'));
 app.use('/blue', express.static('./build'));
 
 app.use('/blue-form', (req, res) => {
-  res.send(renderForm());
+  res.send(renderForm(req.query.len));
 });
 
 app.listen(3001);

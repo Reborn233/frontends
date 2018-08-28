@@ -15,7 +15,8 @@ function handleClickTab(e) {
   e.preventDefault();
   const status = e.currentTarget.getAttribute('name');
   window.history.pushState(null, null, status);
-  rerender(status);
+  const len = window.localStorage.notes ? window.localStorage.notes.len : 0
+  rerender(status, len);
 };
 
 /**

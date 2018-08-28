@@ -17,13 +17,13 @@ function renderTab(tab, status) {
   `;
 };
 
-export default function renderPage(status) {
+export default function renderPage(status,len = 3) {
   if([ALL,DOING,FINISHED].indexOf(status) === -1){
     return `<h1>Not Page Found</h1>`
   }
   return `
     <h2 class="center">Notes</h2>
-    <blue-form></blue-form>
+    <blue-form><!--#include virtual="/blue-form?len=${encodeURIComponent(len)}" --></blue-form>
     <div class="tab">
       ${tabs.map((tab)=>renderTab(tab,status)).join('')}
     </div>
