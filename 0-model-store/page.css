@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+dl,
+ol,
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+#app {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+li {
+  margin-bottom: 1.0rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.hint {
+  color: #8590a6;
+  font-size: 12px;
+  margin: 0;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+input {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  border-radius: .4rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  padding: .6rem 1.0rem;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.tab {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.tab>.tab-item {
+  display: inline-block;
+  color: #8590a6;
+  cursor: pointer;
+}
+
+.tab>.tab-item:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+.tab>.tab-item.active {
+  color: #444;
+}
+
+.tab-container {
+  font-size: 18px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+.tab-container ol li {
+  position: relative;
+}
+
+.tab-container ol li:hover .btn {
+  display: inline-block;
+}
+
+.btn,.content{
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 13px;
+  color: #8590a6;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+
+.btn:hover {
+  color: #444;
+}
+
+.del {
+  text-decoration: line-through
+}
+
+.card {
+  margin-bottom: 10px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+  box-sizing: border-box;
+  padding: 0px 15px 15px;
+  width: 500px;
+  margin: auto;
+}
+
+.item-blue,
+.item-green {
+  padding: 5px
+}
+
+.item-red {
+  outline: 3px dashed orangered;
+}
+
+.item-blue {
+  outline: 3px dashed royalblue;
+}
+
+.item-green {
+  outline: 3px dashed forestgreen;
+}

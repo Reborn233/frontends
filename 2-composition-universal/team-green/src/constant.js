@@ -1,0 +1,25 @@
+// data
+export const ALL = 'all';
+export const DOING = 'doing';
+export const FINISHED = 'finished';
+
+export const note = {
+    name: 'Reborn',
+    notes: [{
+        id: 1,
+        content: 'Vue js',
+        finished: false
+      },
+      {
+        id: 2,
+        content: 'React js',
+        finished: true
+      },
+      {
+        id: 3,
+        content: 'Angular js',
+        finished: false
+      },
+    ],
+  };
+
