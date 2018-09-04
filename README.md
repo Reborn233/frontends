@@ -32,7 +32,7 @@
 
 ![Example 0 - Product Page - Plain JS](./screen/todos1.gif)
 
-[浏览器打开](http://www.reborn233.top/frontends/0-model-store/) & [查看代码](./0-model-store/)
+[浏览器打开](https://reborn233.github.io/frontends/0-model-store/) & [查看代码](./0-model-store/)
 
 所有HTML都是使用纯JavaScript和ES6模板字符串生成的客户端，没有依赖项。代码使用简单的状态/标记分离，并在每次更改时重新呈现整个HTML客户端 - 没有花哨的DOM差异，现在也没有通用渲染。也没有团队分离 - 代码写在一个js / css文件中。
 
@@ -41,7 +41,7 @@
 
 ![Example 1 - Product Page - Composition](./screen/todos2.png)
 
-[浏览器打开](http://www.reborn233.top/frontends/1-composition-client-only/) & [查看代码](./1-composition-client-only/)
+[浏览器打开](https://reborn233.github.io/frontends/1-composition-client-only/) & [查看代码](./1-composition-client-only/)
 
 ### 如何创建自定义元素
 
